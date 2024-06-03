@@ -1,0 +1,14 @@
+  scanf("%d",&month);
+  if(month<=2)
+    printf("两只。\n");
+  if (month > 2)
+  {
+    f1 = f2 = 1;
+    ct = 0;
+    while(ct < month -2){
+      f1 = f1+f2;
+      ct += 1;
+      f2 = f1+f2;
+      ct += 1;
+    }
+    if (month %2 == 0){
